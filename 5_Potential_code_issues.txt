@@ -1,0 +1,17 @@
+ Please find at least 5 potential code issues and be able to explain the reason behind it.
+
+1 - using System; using System.Collections.Generic; 
+	(it is not needed because it is not used)
+2 - public string Title { get; set; }
+	(title.get is never used)
+3 -   public string Text { get; set; }
+	(text.get is never used)
+4 - var xdoc = XDocument.Parse(input);
+	(unknown symbol - "input")
+5 - var serializedDoc = JsonConvert.SerializeObject(doc);
+	(unknown symbol - "Jsonconvert")
+6 -  sw.Write(serializedDoc);
+	(undeclared local variable)
+
+
+These would be current problems at the very beginning that would be eliminated by installing certain libraries, e.g. Newtonsoft.Json, etc.
